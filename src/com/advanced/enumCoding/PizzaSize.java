@@ -1,4 +1,4 @@
-package com.advanced.enumcoding;
+package com.advanced.enumCoding;
 
 public enum PizzaSize {
     SMALL("Small Size"),MEDIUM("Medium Size"),LARGE("Large Size");

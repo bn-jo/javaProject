@@ -1,4 +1,4 @@
-package com.advanced.enumcoding;
+package com.advanced.enumCoding;
 
 public class PizzaApp {
 
