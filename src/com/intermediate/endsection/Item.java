@@ -1,8 +1,9 @@
 package com.intermediate.endsection;
 
 public class Item {
-    private static String name;
-    private static double value;
+
+    static String name;
+  static double value;
 
     public Item(String name, double value) {
         this.name = name;
