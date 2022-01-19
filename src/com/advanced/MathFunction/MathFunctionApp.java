@@ -1,4 +1,4 @@
-package com.advanc.MathFunction;
+package com.advanced.MathFunction;
 
 public class MathFunctionApp {
     public static void main(String[] args) {
