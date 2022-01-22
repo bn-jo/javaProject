@@ -9,9 +9,7 @@ public class GreatRobberyApp{
         Police police = new Police();
         theGang.printGangInfo();
 
-        do {
-            theGang.letsRob(city.getBuildings());
-        } while (!police.catchCriminals(theGang));
+        do theGang.letsRob(city.getBuildings()); while (!police.catchCriminals(theGang));
     }
 }
 

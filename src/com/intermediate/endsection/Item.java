@@ -1,20 +1,20 @@
 package com.intermediate.endsection;
 
-public class Item {
+public  class Item {
 
-    static String name;
-  static double value;
+    private String name;
+    private double value;
 
     public Item(String name, double value) {
         this.name = name;
         this.value = value;
     }
 
-        public static String getName() {
+        public  String getName() {
             return name;
         }
 
-        public static double getValue() {
+        public  double getValue() {
             return value;
         }
 }

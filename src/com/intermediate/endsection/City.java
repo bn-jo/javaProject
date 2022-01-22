@@ -6,6 +6,7 @@ public class City {
 
     public City() {
         Item[] bankItems = new Item[2];
+
         bankItems[0] = new Item("Letter opener", 1.5);
         bankItems[1] = new Item("Stamp", 2.5);
         buildings[0] = new Building("Bank", bankItems);
@@ -21,7 +22,7 @@ public class City {
         buildings[2] = new Building("Post Office", postOfficeItems);
 
         Item[] supermarketItems = new Item[2];
-        supermarketItems[0] = new Item("A loaf of bread", 2.5);
+        supermarketItems[0] = new Item("A loaf of bread",2.5);
         supermarketItems[1] = new Item("A bag of tea", 6.5);
         buildings[3] = new Building("Supermarket", supermarketItems);
 

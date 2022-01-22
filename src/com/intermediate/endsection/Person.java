@@ -5,8 +5,8 @@ public abstract class Person {
     private String name;
     private String nickname;
     private int yearOfBorn;
-    String expertIn;
-    Item[] items;
+    private String expertIn;
+    private Item[] item;
 
 
     public Person(String name,String nickname,int yearOfBorn,String expertIn,Item[] items){
@@ -14,7 +14,7 @@ public abstract class Person {
         this.nickname = nickname;
         this.yearOfBorn = yearOfBorn;
         this.expertIn = expertIn;
-        this.items = items;
+        this.item = items;
     }
 
 
@@ -23,12 +23,12 @@ public abstract class Person {
         System.out.println("Year of born: " + yearOfBorn);
         System.out.println("Expert in: " + expertIn);
         System.out.println("The person has the following items:");
-        for(Item items : items )
+        for(Item item : item )
         {
-            System.out.println(Item.getName());
+            System.out.println(item.getName());
 
 
-            System.out.println("VALUE : "+Item.getValue());
+            System.out.println("VALUE : "+item.getValue());
 
         }
 
@@ -36,7 +36,7 @@ public abstract class Person {
       public String getName(){
         return name;
     }
-    public String getNickname(){
+      public String getNickname(){
         return nickname;
     }
     }

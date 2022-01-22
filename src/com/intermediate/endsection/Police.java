@@ -8,7 +8,7 @@ public class Police {
     Police(){
         Item[] adamItems = new Item[2];
         adamItems[0] = new Item("Revolver",500.0);
-        adamItems[1] = new Item("Magnifying glass",10.0);
+        adamItems[1] = new Item("Magnifying glass", 10.0);
         adamPalmer = new Detective("Adam Palmer","Coyote",1960,"chess",adamItems);
 
             }

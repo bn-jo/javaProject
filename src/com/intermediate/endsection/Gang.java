@@ -33,10 +33,11 @@ public class Gang {
     public void printGangInfo(){
 
 
-        System.out.println("_______________________");
         //        for (int i = 0; criminals.length >= i; i++ ){
         for(Criminal criminal : criminals) {
+            System.out.println("_______________________");
             criminal.printBioData();
+
         }
 
 
@@ -55,16 +56,18 @@ public class Gang {
 
     public void letsRob(Building[] buildings) {
         int randomBuildingsIndex = randomNumberGenerator.nextInt(buildings.length + 1);
+        System.out.println("-------------------------------");
 
         if (isSuccessfulRobbery()) {
             System.out.println("The gang rob the following items :"+buildings[randomBuildingsIndex].getName() +":");
 
             for (Item item : buildings[randomBuildingsIndex].getItems()) {
-            sumRobbedValue += Item.getValue();
-            System.out.println("-" + Item.getName());
+            sumRobbedValue += item.getValue();
+            System.out.println("-" + item.getName());
         }
 
     }else{
-            System.out.println("Not a good one.The gang tried to rob the"+ buildings[randomBuildingsIndex].getName() + "but failed");
-    }}
+            System.out.println("Not a good one.The gang tried to rob the"+ buildings[randomBuildingsIndex].getName() + "but failed.");
+    }
+    }
 }
