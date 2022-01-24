@@ -28,7 +28,7 @@ public class PizzaApp {
         System.out.println("Price : "+samePizza.getPrice() +" $ ");
         System.out.println("__________");
         System.out.println(pizzaOrder.equals(samePizza));
-        System.out.println("");
+        
 
         Pizza anotherPizza = new Pizza("Margareta", PizzaSize.LARGE);
         System.out.println(pizzaOrder.equals(anotherPizza));
@@ -49,6 +49,6 @@ public class PizzaApp {
         System.out.println("Hash code pizza order: "+ pizzaOrder.hashCode());
         System.out.println("Hash code same pizza order: "+ samePizza.hashCode());
         System.out.println("Hash code same another pizza order: "+ anotherPizza.hashCode());
-
+        System.out.println(pizzaOrder);
     }
 }
