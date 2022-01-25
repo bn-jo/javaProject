@@ -28,7 +28,7 @@ public class PizzaApp {
         System.out.println("Price : "+samePizza.getPrice() +" $ ");
         System.out.println("__________");
         System.out.println(pizzaOrder.equals(samePizza));
-        
+
 
         Pizza anotherPizza = new Pizza("Margareta", PizzaSize.LARGE);
         System.out.println(pizzaOrder.equals(anotherPizza));
