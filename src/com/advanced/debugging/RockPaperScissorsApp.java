@@ -1,4 +1,4 @@
-package com.debugging;
+package com.advanced.debugging;
 
 import java.util.Random;
 import java.util.Scanner;
