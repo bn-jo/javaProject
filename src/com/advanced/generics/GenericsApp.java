@@ -1,0 +1,44 @@
+package com.advanced.generics;
+
+import java.util.ArrayList;
+
+public class GenericsApp {
+
+    public static void main(String[] args) {
+
+    Box<Integer> myFavoriteNumber = new Box<>();
+    myFavoriteNumber.setTypeData(15);
+        Util.displayToString(myFavoriteNumber);
+
+    Box<String> myFavoriteActor = new Box<>();
+    myFavoriteActor.setTypeData("Russel Crow ");
+        Util.displayToString(myFavoriteActor);
+
+        ArrayList<Box<String>> pileOfBoxes = new ArrayList<>();
+        pileOfBoxes.add(myFavoriteActor);
+        pileOfBoxes.add(myFavoriteActor);
+        Util.displayToString(pileOfBoxes);
+
+
+
+        orderedPair<Integer,String> kobeBryant = new orderedPair<>(24,"Kobe Bryant");
+Util.displayToString(kobeBryant);
+        ArrayList<orderedPair<String,String> > listOfContries = new ArrayList<>();
+
+
+        orderedPair<String,String> malta = new orderedPair<>("MLT","Malta");
+
+
+        orderedPair<String,String> germany = new orderedPair<>("GER","Germany");
+
+
+        listOfContries.add(malta);
+        listOfContries.add(germany);
+
+
+            Util.displayToString(listOfContries);
+
+    }
+
+
+}
