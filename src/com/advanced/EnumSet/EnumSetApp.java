@@ -15,5 +15,9 @@ public class EnumSetApp {
         System.out.println("Basic pizza sizes : "+ basicPizzaSizes);
 
 
+        EnumSet<PizzaSize> middlePizzaSizes = EnumSet.range(PizzaSize.MEDIUM , PizzaSize.EXTRA_LARGE);
+        System.out.println("Middle pizza sizes :"+middlePizzaSizes);
+
+
     }
 }
